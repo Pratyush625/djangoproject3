@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/project.css'%}">
+    <title></title>
+  </head>
+  <body>
+    <div class="wrapper" align=center>
+      <h2> Thanks for providing information... Your details have been submitted</h2>
+      {% if students %}
+      <table border="2">
+        <th>Name</th>
+        <th>Roll no</th>
+        <th>Email</th>
+        <th>Feedback</th>
+
+      {% for student in students %}
+        <tr>
+          <td>{{student.name}}</td>
+          <td>{{student.rollno}}</td>
+          <td>{{student.email}}</td>
+          <td>{{student.feedback}}</td>
+        </tr>
+      {% endfor %}
+      </table>
+
+
+         {%else%}
+         <p>No Data Found</p>
+         {%endif%}
+    </body>
+
+    </div>
+</html>
