@@ -20,6 +20,7 @@ To run locally, do the usual:
    
 #.To convert model class to sql code use makemigrations
    py manage.py makemigrations
+   
 #. To create table inside database
    py manage.py migrate
    
