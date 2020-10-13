@@ -9,6 +9,7 @@ To run locally, do the usual:
     django-admin startproject studentfeedbackproject
    
 #. Go to the project dir
+
     cd studentfeedbackproject
     
 #. Create application inside main project directory
